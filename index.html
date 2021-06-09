@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 2</title>
+    <style>
+        .allbuttons{
+            padding-left: 700px;
+            padding-right: auto;
+        }
+        #Red{
+         background-color: Red;   
+        }
+        #Green{
+            background-color:Green;
+        }
+        #Yellow{
+            background-color: Yellow;
+        }
+        #Blue{
+            background-color: Blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="allbuttons">
+    <button id="Red" onclick="funct(this.id)">Red</button>
+    <button id="Green" onclick="funct(this.id)">Green</button>
+    <button id="Yellow" onclick="funct(this.id)">Yellow</button>
+    <button id="Blue" onclick="funct(this.id)">Blue</button>
+    </div>
+    <script>
+        function funct(attr){
+            document.body.style.backgroundColor=attr;
+        }
+    </script>
+
+</body>
+</html>
